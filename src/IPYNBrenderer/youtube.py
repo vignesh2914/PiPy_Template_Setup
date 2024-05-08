@@ -5,6 +5,8 @@ from IPYNBrenderer.logger import logger
 from py_youtube import Data
 
 
+
+
 @ensure_annotations
 def get_time_info(URL: str) -> int:
     def _verify_vid_id_len(vid_id, __expected_len=11):
@@ -42,6 +44,8 @@ def get_time_info(URL: str) -> int:
                 return time
     except Exception:
         raise InvalidURLException
+
+
 
 
 @ensure_annotations
